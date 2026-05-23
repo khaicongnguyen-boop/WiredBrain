@@ -17,3 +17,15 @@
 /.vs/WiredBrain/v17/.suo
 /.vs/WiredBrain/v17/DocumentLayout.backup.json
 /.vs/WiredBrain/v17/DocumentLayout.json
+/WiredBrain.Tests/obj/Debug/net8.0/refint
+*.dll
+/WiredBrain.Tests/obj/Debug/net8.0
+/WiredBrain.Tests/bin/Debug/net8.0
+/.vs/WiredBrain/copilot-chat/95392e2f/sessions
+/.vs/WiredBrain/DesignTimeBuild
+/.vs/WiredBrain/FileContentIndex
+/WiredBrain.API/bin/Debug/net8.0
+/WiredBrain.API/obj/Debug/net8.0
+/WiredBrain.API/obj
+/WiredBrain.Tests/obj
+/.vs/WiredBrain/v17/TestStore/0
