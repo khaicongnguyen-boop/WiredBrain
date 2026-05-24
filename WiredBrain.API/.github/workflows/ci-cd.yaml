@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v4   
       with:
         dotnet-version: 8.0.x
     
@@ -39,4 +39,18 @@ jobs:
         hide_branch_rate: false
         hide_complexity: true
         indicators: true
+        output: console
+
+    - id: publish
+      name: Publish
+      run: dotnet publish "WiredBrainApi.Web/WiredBrainApi.Web.csproj" -c Release -o ./publish --self-contained -r linux-x64 /p:UseAppHost=true
+
+    - name: Zip Artifact
+      run: zip app.zip ./publish
+
+    - id: upload
+      name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: dotnet-webapp
         output: console
